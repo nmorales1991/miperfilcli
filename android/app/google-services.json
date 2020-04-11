@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "307313823710",
+    "firebase_url": "https://mi-perfil-cli.firebaseio.com",
+    "project_id": "mi-perfil-cli",
+    "storage_bucket": "mi-perfil-cli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307313823710:android:962dfd935a0fe953f7174f",
+        "android_client_info": {
+          "package_name": "com.miperfilcli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307313823710-aa08moav5gecffoqajpom9tvv72tnbmq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miperfilcli",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "307313823710-feparl8hmca20a4c2s0jfur5olt7u76o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbqjfRrcxBHSM9xRGODD79kJaig7OI5jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307313823710-feparl8hmca20a4c2s0jfur5olt7u76o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
