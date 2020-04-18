@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
-import {View, Text} from 'react-native';
-import SplashScreen from 'react-native-splash-screen'
+import {View, Text, StatusBar} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 //imports
 import Navigation from './navigation/Navigation';
 
@@ -13,12 +13,11 @@ import getTheme from './native-base-theme/components';
 import platform from './native-base-theme/variables/platform';
 
 function App() {
- 
   const [usuario, setusuario] = useState(null);
   const [provider, setprovider] = useState(null);
 
   useEffect(() => {
-    SplashScreen.hide()
+    SplashScreen.hide();
     app.auth().onAuthStateChanged(function (user) {
       setusuario(user);
       if (user !== null) {
@@ -27,15 +26,14 @@ function App() {
     });
   }, []);
 
-
-    return (
-      <StyleProvider style={getTheme(platform)}>
-        <Context.Provider value={{usuario, provider}}>
-          <Navigation />
-        </Context.Provider>
-      </StyleProvider>
-    );
- 
+  return (
+    <StyleProvider style={getTheme(platform)}>
+      <Context.Provider value={{usuario, provider}}>
+      <StatusBar barStyle="light-content" backgroundColor='#0AC4BA' />
+        <Navigation />
+      </Context.Provider>
+    </StyleProvider>
+  );
 }
 
 export default App;

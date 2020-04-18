@@ -22,7 +22,7 @@ const Navigation = () => {
             <Stack.Navigator
                 screenOptions={{
                     headerStyle: {
-                        height: 100,
+                        height: 70,
                         backgroundColor: "white",
                         borderBottomColor: "transparent",
                         elevation: 0,
